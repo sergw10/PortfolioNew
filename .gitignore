@@ -34,5 +34,4 @@ coverage
 *.sw?
 
 # Folders
-design
 node_modules
