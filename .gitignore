@@ -1,3 +1,8 @@
+# local env files
+.env.local
+.env.*.local
+*.local
+
 # Logs
 logs
 *.log
@@ -7,12 +12,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
+package-lock.json
+
 .DS_Store
 dist
 dist-ssr
 coverage
-*.local
+
 
 /cypress/videos/
 /cypress/screenshots/
@@ -26,3 +32,7 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Folders
+design
+node_modules
