@@ -9,8 +9,7 @@
       <template v-for="skill in skillsList" :key="skillsList.length">
         <li :class="`ellipse-wrapper ${skill.name}`">
           <div class="skill__ellipse-white">
-            <div class="percent-lines">
-            </div>
+            <div class="percent-lines"></div>
           </div>
           <div :class="`skill ${skill.name}-skill`"></div>
           <p class="skill__percentage-wrap" :id="`num_${skillsList.length + 1}`"></p>
@@ -74,17 +73,6 @@ $(document).ready(() => {
 </script>
 
 <style lang="scss">
-/* Portfolio skills */
-.main-section {
-  padding: 0 15px 0 350px;
-
-  h2 {
-    font-size: 21px;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-}
-
 .portfolio__skills {
   padding-top: 30px;
 }
@@ -123,23 +111,33 @@ $(document).ready(() => {
   background-repeat: no-repeat;
 }
 
+.html-skill,
+.css-skill,
+.js-skill,
+.preprocessors-skill,
+.jquery-skill,
+.photoshop-skill,
+.skill__ellipse-white {
+  background: url('../assets/images/ellipses.png') no-repeat
+}
+
 .html-skill {
-  background: url('../assets/images/ellipses.png') no-repeat -160px -1px;
+  background-position: -160px -1px;
 }
 .css-skill {
-  background: url('../assets/images/ellipses.png') no-repeat -1px -1px;
+  background-position: -1px -1px;
 }
 .js-skill {
-  background: url('../assets/images/ellipses.png') no-repeat -160px -160px;
+  background-position: -160px -160px;
 }
 .preprocessors-skill {
-  background: url('../assets/images/ellipses.png') no-repeat -319px -160px;
+  background-position: -319px -160px;
 }
 .jquery-skill {
-  background: url('../assets/images/ellipses.png') no-repeat -1px -160px;
+  background-position: -1px -160px;
 }
 .photoshop-skill {
-  background: url('../assets/images/ellipses.png') no-repeat -319px -1px;
+  background-position: -319px -1px;
 }
 
 .skill__ellipse-white {
@@ -149,8 +147,7 @@ $(document).ready(() => {
   z-index: 2;
   top: 40px;
   left: 23px;
-  background-repeat: no-repeat;
-  background: url('../assets/images/ellipses.png') no-repeat -1px -319px;
+  background-position: -1px -319px;
 }
 
 
@@ -403,13 +400,13 @@ $(document).ready(() => {
 @keyframes opacity_line {
   0% {
     opacity: 0;
-  };
-100% {
+  }
+  100% {
      opacity: 1;
-   };
+   }
 }
 
-p.skill__percentage-wrap {
+.skill__percentage-wrap {
   position: absolute;
   top: 84px;
   left: 63px;
@@ -437,7 +434,7 @@ p.skill__percentage-wrap {
     }
   }
 
-  p.skill__percentage-wrap {
+  .skill__percentage-wrap {
     left: 58px;
   }
 }

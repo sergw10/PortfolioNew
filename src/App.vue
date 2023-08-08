@@ -19,6 +19,16 @@ import Works from './components/Works/Works.vue'
 </template>
 
 <style lang="scss">
+.main-section {
+  padding: 0 15px 0 350px;
+
+  h2 {
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
 /* Responsive for main Classes */
 @media screen and ( max-width: 900px ) {
   .main-section {

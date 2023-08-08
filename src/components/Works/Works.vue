@@ -68,11 +68,9 @@ const allWorks: AllWorks = reactive([
 </script>
 
 <style lang="scss">
-.works {
-  &-wrapper {
-    margin: 20px 0;
-    text-align: center;
-  }
+.works-wrapper {
+  margin: 20px 0;
+  text-align: center;
 }
 
 .work-preview {
@@ -126,7 +124,6 @@ const allWorks: AllWorks = reactive([
 }
 
 @media screen and ( max-width: 725px ) {
-
   .work-preview {
     width: 400px;
     margin: 3% 1%;
@@ -134,7 +131,6 @@ const allWorks: AllWorks = reactive([
 }
 
 @media screen and ( max-width: 530px ) {
-
   .work-preview {
     height: auto;
 
@@ -145,7 +141,6 @@ const allWorks: AllWorks = reactive([
 }
 
 @media screen and ( max-width: 470px ) {
-
   .work-preview {
     width: 98%;
     margin: 4% 1%;
