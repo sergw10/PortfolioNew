@@ -29,7 +29,7 @@ const skillsList = reactive([
   {name: 'css', text: 'CSS'},
   {name: 'js', text: 'JavaScript'},
   {name: 'preprocessors', text: 'SASS/LESS'},
-  {name: 'jquery', text: 'JQuery'},
+  {name: 'jquery', text: 'jQuery'},
   {name: 'photoshop', text: 'Photoshop/Figma'},
 ]);
 
