@@ -35,7 +35,7 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import { AllWorks, RealWorks } from './interface'
+import { AllWorks, RealWorks } from './types'
 
 const emailWorks: AllWorks = reactive([
   {jpgNumber: 12, name: 'broochy'}

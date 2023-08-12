@@ -1,10 +1,9 @@
 <template>
-  <aside class="portfolio__profile-info">
-    <figure>
-      <div class="portfolio__profile-img-wrapper">
-        <img src="../assets/images/user.jpg" title="Rubezhin Sergey" alt="portfolio-foto">
-      </div>
-    </figure>
+  <header class="sidebar">
+
+    <div class="portfolio__profile-img-wrapper">
+      <img src="../assets/images/user.jpg" title="Rubezhin Sergey" alt="portfolio-foto">
+    </div>
 
     <section class="portfolio__profile-name">
       <h1>Rubezhin Sergey</h1>
@@ -54,7 +53,7 @@
       </ul>
     </section>
 
-    <section class="portfolio__profile-know-languges">
+    <section class="portfolio__profile-know-languages">
 
       <h2>Languages</h2>
 
@@ -65,7 +64,7 @@
       </template>
 
     </section>
-  </aside>
+  </header>
 </template>
 
 <script setup lang="ts">
@@ -75,14 +74,14 @@ const languagesList: {language: string, level: string} = reactive([
   {language: 'English', level: 'Intermediate'},
   {language: 'Ukrainian', level: 'Native'},
   {language: 'Russian', level: 'Native'},
-  {language: 'Polski', level: 'Basic'}
+  {language: 'Polish', level: 'Basic'}
 ]);
 
 </script>
 
 <style lang="scss">
 
-.portfolio__profile-info {
+.sidebar {
   overflow: auto;
   position: fixed;
   top: 0;
@@ -91,10 +90,6 @@ const languagesList: {language: string, level: string} = reactive([
   height: 100%;
   background-color: #363b43;
   padding: 40px 15px 15px 15px;
-
-  figure {
-    margin-bottom: 30px;
-  }
 
   h1 {
     color: #62c3f5;
@@ -111,9 +106,9 @@ const languagesList: {language: string, level: string} = reactive([
 }
 
 .portfolio__profile-img-wrapper {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
+  width: 89px;
+  height: 89px;
+  margin: 0 auto 30px;
   border-radius: 50%;
   overflow: hidden;
   border: 4px white solid;
@@ -190,7 +185,7 @@ const languagesList: {language: string, level: string} = reactive([
   }
 }
 
-.portfolio__profile-know-languges {
+.portfolio__profile-know-languages {
 
   h2 {
     font-weight: 500;
@@ -200,7 +195,7 @@ const languagesList: {language: string, level: string} = reactive([
     font-size: 16px;
     font-weight: 300;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 10px 0 0;
   }
 }
 
@@ -246,7 +241,7 @@ const languagesList: {language: string, level: string} = reactive([
 
 /* Responsive */
 @media screen and ( max-width: 1500px ) {
-  .portfolio__profile-info {
+  .sidebar {
     padding: 20px 5px 15px 25px;
   }
 
@@ -262,10 +257,6 @@ const languagesList: {language: string, level: string} = reactive([
     margin: 10px 0 20px;
   }
 
-  .portfolio__profile-info h2 {
-    margin-bottom: 5px;
-  }
-
   .grey-line {
     margin-bottom: 0;
   }
@@ -273,7 +264,7 @@ const languagesList: {language: string, level: string} = reactive([
 
 @media screen and ( max-width: 900px ) {
 
-  .portfolio__profile-info {
+  .sidebar {
     width: 100%;
     position: relative;
     padding: 20px 25px 15px;
@@ -288,7 +279,7 @@ const languagesList: {language: string, level: string} = reactive([
   }
 
   .portfolio__profile-contacts-wrapper,
-  .portfolio__profile-know-languges {
+  .portfolio__profile-know-languages {
     width: 49%;
     display: inline-block;
     vertical-align: top;
@@ -317,7 +308,7 @@ const languagesList: {language: string, level: string} = reactive([
   }
 
 .portfolio__profile-contacts-wrapper,
-.portfolio__profile-know-languges {
+.portfolio__profile-know-languages {
     width: 100%;
 
     ul, p, h2 {
@@ -332,7 +323,7 @@ const languagesList: {language: string, level: string} = reactive([
     }
   }
 
-.portfolio__profile-know-languges {
+.portfolio__profile-know-languages {
     margin-top: 10px;
     margin-bottom: 20px;
   }

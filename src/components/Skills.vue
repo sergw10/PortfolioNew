@@ -11,7 +11,7 @@
           <div class="skill__ellipse-white">
             <div class="percent-lines"></div>
           </div>
-          <div :class="`skill ${skill.name}-skill`"></div>
+          <div :class="`skill-item ${skill.name}-skill`"></div>
           <p class="skill__percentage-wrap" :id="`num_${skillsList.length + 1}`"></p>
           <p>{{ skill.text }}</p>
         </li>
@@ -102,7 +102,7 @@ $(document).ready(() => {
   }
 }
 
-.skill {
+.skill-item {
   position: relative;
   z-index: 1;
   margin: 20px 5px 10px;
@@ -118,7 +118,7 @@ $(document).ready(() => {
 .jquery-skill,
 .photoshop-skill,
 .skill__ellipse-white {
-  background: url('../assets/images/ellipses.png') no-repeat
+  background: url('../assets/images/ellipses.png') no-repeat;
 }
 
 .html-skill {
@@ -163,23 +163,11 @@ $(document).ready(() => {
 .less-color {
   color: #6d8dbc;
 }
-.sass-color {
+.preprocessors-color {
   color: #ff3231;
 }
 .jquery-color {
   color: #0769ad;
-}
-.gulp-color {
-  color: #cf4647;
-}
-.pug-color {
-  color: #a86454;
-}
-.github-color {
-  color: #24292e;
-}
-.docker-color {
-  color: #306a8a;
 }
 
 
@@ -195,7 +183,7 @@ $(document).ready(() => {
   background-color: #f0be26;
 }
 
-.sass .percent-lines div {
+.preprocessors .percent-lines div {
   background-color: #f33837;
 }
 
