@@ -79,7 +79,7 @@ const languagesList: {language: string, level: string} = reactive([
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .sidebar {
   overflow: auto;

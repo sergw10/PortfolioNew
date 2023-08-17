@@ -79,7 +79,7 @@
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .experience__wrapper {
   margin: 10px 0;
 

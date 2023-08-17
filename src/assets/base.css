@@ -12,7 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
@@ -26,15 +26,6 @@ body {
 
 ol, ul {
   list-style-type: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
 }
 
 table {
@@ -57,8 +48,7 @@ textarea {
 textarea:focus {
   outline: 0;
 }
-
-/* Body */
+/* -------------------------- */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -72,9 +62,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Class */
-.clearfix {
-  display: table;
-  content: '';
-  clear: both;
+/* Classes */
+.main-section {
+  padding: 0 15px 0 350px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive for main Classes */
+@media screen and ( max-width: 1024px ) {
+  .main-section {
+    padding: 0 15px;
+  }
 }

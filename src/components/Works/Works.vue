@@ -67,7 +67,7 @@ const allWorks: AllWorks = reactive([
 ])
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .works-wrapper {
   margin: 20px 0;
   text-align: center;
@@ -83,8 +83,6 @@ const allWorks: AllWorks = reactive([
   vertical-align: top;
   border-radius: 4px;
   line-height: 0;
-  -webkit-box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.2);
-  -moz-box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.2);
   box-shadow: 1px 1px 12px 1px rgba(0,0,0,0.2);
 
   &:hover {
