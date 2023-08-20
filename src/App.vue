@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import InfoLeftPanel from './components/InfoLeftPanel.vue'
 import Skills from './components/Skills.vue'
 import Experience from './components/Experience.vue'
-import Works from './components/Works/Works.vue'
+import Works from './components/Works.vue'
 </script>
 
 <template>
@@ -18,5 +18,4 @@ import Works from './components/Works/Works.vue'
   </main>
 </template>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

@@ -69,8 +69,9 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
+import type { LanguagesList } from '@/types/types'
 
-const languagesList: {language: string, level: string} = reactive([
+const languagesList = reactive<LanguagesList[]> ([
   {language: 'English', level: 'Intermediate'},
   {language: 'Ukrainian', level: 'Native'},
   {language: 'Russian', level: 'Native'},

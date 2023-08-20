@@ -35,13 +35,13 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import { AllWorks, RealWorks } from './types'
+import type { AllWorks, RealWorks } from '@/types/types'
 
-const emailWorks: AllWorks = reactive([
+const emailWorks = reactive<AllWorks[]>([
   {jpgNumber: 12, name: 'broochy'}
 ])
 
-const realWorks: RealWorks = reactive([
+const realWorks = reactive<RealWorks[]>([
   {jpgNumber: 11, link: 'http://sabon.com.ua/'},
   {jpgNumber: 111, link: 'http://krovati-soft.sabon.com.ua/'},
   {jpgNumber: 7, link: 'https://www.facebook.com/fartukinua/'},
@@ -52,7 +52,7 @@ const realWorks: RealWorks = reactive([
   {jpgNumber: 21, link: 'https://www.youtube.com/watch?v=xKwslbv8uaI', oldLink: 'https://ico.orderbook.io/'}
 ])
 
-const allWorks: AllWorks = reactive([
+const allWorks = reactive<AllWorks[]>([
   {jpgNumber: 1, name: 'take'},
   {jpgNumber: 2, name: 'daylite'},
   {jpgNumber: 3, name: 'cruise'},

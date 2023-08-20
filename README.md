@@ -1,8 +1,10 @@
 # Portfolio
 
-vue3
+vue 3
+
 typescript 5.1.6
-node.js - v16.20.1
+
+node.js - v18.17.1
 
 ## Project Setup
 
