@@ -9,23 +9,23 @@
       <template class="works-list" v-for="(item) in realWorks" :key="realWorks.length">
         <div class="work-preview">
           <a target="_blank" :href="item.link">
-            <img :src="`src/assets/images/preview_${item.jpgNumber}.jpg`" alt="work preview">
+            <img :src="buildSrcForWorkPreviewImages(item.jpgNumber)" alt="work preview">
           </a>
         </div>
       </template>
 
       <template class="works-list" v-for="(item) in emailWorks" :key="realWorks.length">
         <div class="work-preview">
-          <a target="_blank" :href="`works/${item.name}/index.html`">
-            <img :src="`src/assets/images/preview_${item.jpgNumber}.jpg`" alt="work preview">
+          <a target="_blank" :href="buildHrefForWorkPreviewImages(item.name)">
+            <img :src="buildSrcForWorkPreviewImages(item.jpgNumber)" alt="work preview">
           </a>
         </div>
       </template>
 
       <template class="works-list" v-for="(item) in allWorks" :key="allWorks.length">
         <div class="work-preview">
-          <a target="_blank" :href="`works/${item.name}/index.html`">
-            <img :src="`src/assets/images/preview_${item.jpgNumber}.jpg`" alt="work preview">
+          <a target="_blank" :href="buildHrefForWorkPreviewImages(item.name)">
+            <img :src="buildSrcForWorkPreviewImages(item.jpgNumber)" alt="work preview">
           </a>
         </div>
       </template>
@@ -65,6 +65,14 @@ const allWorks = reactive<AllWorks[]>([
   {jpgNumber: 16, name: 'ucgt'},
   {jpgNumber: 17, name: 'internet-shop'}
 ])
+
+function buildSrcForWorkPreviewImages (jpgNumber: number) {
+  return `src/assets/images/preview_${jpgNumber}.jpg`
+}
+
+function buildHrefForWorkPreviewImages (itemName: string) {
+  return `works/${itemName}/index.html`
+}
 </script>
 
 <style lang="scss" scoped>
@@ -101,47 +109,6 @@ const allWorks = reactive<AllWorks[]>([
       -o-object-fit: contain;
       object-fit: contain;
     }
-  }
-}
-
-/* Responsive */
-@media screen and ( max-width: 1370px ) {
-  .work-preview {
-    width: 47%;
-    -webkit-box-shadow: 1px 1px 12px 1px rgba(0,0,0,.3);
-    -moz-box-shadow: 1px 1px 12px 1px rgba(0,0,0,.3);
-    box-shadow: 1px 1px 12px 1px rgba(0,0,0,.3);
-  }
-}
-
-@media screen and ( max-width: 900px ) {
-  .work-preview {
-    width: 47%;
-    margin: 2% 1%;
-  }
-}
-
-@media screen and ( max-width: 725px ) {
-  .work-preview {
-    width: 400px;
-    margin: 3% 1%;
-  }
-}
-
-@media screen and ( max-width: 530px ) {
-  .work-preview {
-    height: auto;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-  }
-}
-
-@media screen and ( max-width: 470px ) {
-  .work-preview {
-    width: 98%;
-    margin: 4% 1%;
   }
 }
 </style>

@@ -1,14 +1,11 @@
-import './assets/main.css'
+import messages from "@intlify/vite-plugin-vue-i18n/messages";
+import { createApp } from "vue";
+import { createI18n } from "vue-i18n";
+import App from "./App.vue";
 
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+const i18n = createI18n({
+  locale: localStorage.locale || "en",
+  messages,
+});
 
-import App from './App.vue'
-import router from './router'
-
-const app = createApp(App)
-
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+createApp(App).use(i18n).mount("#app");
