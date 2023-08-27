@@ -1,67 +1,46 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-import HelloWorld from "./components/HelloWorld.vue";
-import LocaleSelect from "./components/LocaleSelect.vue";
-import links from "@/data/links.json";
+import { RouterLink, RouterView } from 'vue-router'
+import InfoLeftPanel from './components/InfoLeftPanel/InfoLeftPanel.vue'
+import Skills from './components/Skills/Skills.vue'
+import Experience from './components/Experience/ExperienceView.vue'
+import Works from './components/Works/Works.vue'
 
-const { t } = useI18n();
 
-const getImgURL = (src: string) => {
-  return new URL(`./assets/svg/${src}.svg`, import.meta.url).href;
-};
+// import { useI18n } from "vue-i18n";
+// import HelloWorld from "./components/HelloWorld.vue";
+// import LocaleSelect from "./components/LocaleSelect.vue";
+// import links from "@/data/links.json";
+
+// const { t } = useI18n();
+//
+// const getImgURL = (src: string) => {
+//   return new URL(`./assets/svg/${src}.svg`, import.meta.url).href;
+// };
 </script>
 
+<!--<template>-->
+<!--  <locale-select></locale-select>-->
+<!--  <a-->
+<!--    v-for="{ alt, src, href } in links"-->
+<!--    :key="alt"-->
+<!--    class="logo-link"-->
+<!--    :href="href"-->
+<!--  >-->
+<!--    <img class="logo" :alt="alt" :src="getImgURL(src)" />-->
+<!--  </a>-->
+<!--  <HelloWorld :msg="t('welcome')" />-->
+<!--</template>-->
+
 <template>
-  <locale-select></locale-select>
-  <a
-    v-for="{ alt, src, href } in links"
-    :key="alt"
-    class="logo-link"
-    :href="href"
-  >
-    <img class="logo" :alt="alt" :src="getImgURL(src)" />
-  </a>
-  <HelloWorld :msg="t('welcome')" />
+  <main>
+    <InfoLeftPanel></InfoLeftPanel>
+
+    <Skills></Skills>
+
+    <ExperienceView></ExperienceView>
+
+    <Works></Works>
+  </main>
 </template>
 
-<style lang="scss">
-@use "@/styles/functions/color" as *;
-
-body {
-  background-color: color(light);
-  color: color(dark);
-
-  @media (prefers-color-scheme: dark) {
-    background-color: color(dark);
-    color: color(light);
-  }
-}
-
-#app {
-  text-align: center;
-  margin-top: 60px;
-}
-</style>
-
-<style lang="scss" scoped>
-@use "@/styles/functions/color" as *;
-
-.logo {
-  height: 56px;
-  width: 56px;
-}
-
-.logo-link {
-  background: darken(color(light), 35%);
-  border-radius: 50%;
-  padding: 8px;
-
-  @media (prefers-color-scheme: dark) {
-    background: darken(color(dark), 5%);
-  }
-
-  & + .logo-link {
-    margin-left: 16px;
-  }
-}
-</style>
+<style lang="scss"></style>

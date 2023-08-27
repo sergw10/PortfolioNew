@@ -35,8 +35,6 @@ yarn build // run build
 
 yarn serve // preview build
 
-yarn storybook // starts storybook
-
 yarn lint // lint and fix all files
 
 yarn format // run prettier on all files
@@ -84,25 +82,6 @@ Since TypeScript cannot handle type information for `.vue` imports, they are shi
 │   │   └── zh.json
 │   ├── main.ts
 │   ├── shims-vue.d.ts
-│   ├── stories
-│   │   ├── BasicButton.stories.ts
-│   │   ├── BasicButton.vue
-│   │   ├── Header.stories.js
-│   │   ├── Header.vue
-│   │   ├── Introduction.stories.mdx
-│   │   ├── Page.stories.js
-│   │   ├── Page.vue
-│   │   ├── assets
-│   │   │   ├── code-brackets.svg
-│   │   │   ├── colors.svg
-│   │   │   ├── comments.svg
-│   │   │   ├── direction.svg
-│   │   │   ├── flow.svg
-│   │   │   ├── plugin.svg
-│   │   │   ├── repo.svg
-│   │   │   └── stackalt.svg
-│   │   ├── header.css
-│   │   └── page.css
 │   ├── styles
 │   │   ├── _colors.scss
 │   │   ├── _font.scss

@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import BasicButton from "@/stories/BasicButton.vue";
-import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 
 defineProps<{ msg: string }>();
-
-const count = ref(0);
 
 const { t } = useI18n();
 </script>
@@ -45,13 +41,6 @@ const { t } = useI18n();
 
   <h3>{{ t("check-reactivity") }}</h3>
 
-  <basic-button
-    size="small"
-    type="button"
-    @click="count++"
-    :label="t('count', { count })"
-  >
-  </basic-button>
   <p>
     {{ t("hmr.edit") }}
     <code>components/HelloWorld.vue</code>
@@ -60,17 +49,6 @@ const { t } = useI18n();
 </template>
 
 <style lang="scss" scoped>
-@use "@/styles/functions/color" as *;
+/*@use "@/styles/functions/color" as *;*/
 
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
-}
-
-code {
-  background-color: #eee;
-  padding: 2px 4px;
-  border-radius: 4px;
-  color: #304455;
-}
 </style>

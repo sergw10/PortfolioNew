@@ -1,0 +1,12 @@
+/* For skills animation */
+@mixin line-item-position($top, $left, $transformDeg, $animationDelay) {
+  top: $top;
+  left: $left;
+  transform: rotate($transformDeg);
+  animation-delay: $animationDelay;
+}
+
+@mixin linear-gradient-bg($background-from, $background-to) {
+  background: $background-from;
+  background: linear-gradient(0deg, $background-from 0%, $background-to 100%);
+}

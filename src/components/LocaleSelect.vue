@@ -24,22 +24,6 @@ watch(locale, (newLocale) => {
 </template>
 
 <style lang="scss" scoped>
-/* reset */
-select {
-  appearance: none;
-  background-color: transparent;
-  border: none;
-  padding: 0 1rem 0 0;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-/* end of reset */
-
 .locales {
   position: fixed;
   top: 1rem;

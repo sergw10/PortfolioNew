@@ -1,0 +1,16 @@
+.main-section {
+  padding: 0 15px 0 350px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive for main Classes */
+@media screen and ( max-width: 1024px ) {
+  .main-section {
+    padding: 0 15px;
+  }
+}
