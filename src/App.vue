@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import InfoLeftPanel from './components/InfoLeftPanel/InfoLeftPanel.vue'
 import Skills from './components/Skills/Skills.vue'
-import Experience from './components/Experience/ExperienceView.vue'
+import ExperienceView from './components/MyExperience/ExperienceView.vue'
 import Works from './components/Works/Works.vue'
 
 

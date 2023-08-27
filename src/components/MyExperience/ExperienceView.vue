@@ -1,5 +1,5 @@
 <style lang="scss" scoped>
-@use "@/components/Skills/skills" as *;
+@use "@/components/MyExperience/experienceStyle" as *;
 </style>
 
 <template>
