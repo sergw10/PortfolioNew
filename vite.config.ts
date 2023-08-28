@@ -1,8 +1,9 @@
+import { defineConfig } from "vite";
 import vueI18n from "@intlify/vite-plugin-vue-i18n";
 import vue from "@vitejs/plugin-vue";
+
 import { resolve } from "path";
 import { fileURLToPath, URL } from "url";
-import { defineConfig } from "vite";
 import eslintPlugin from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
