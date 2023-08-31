@@ -1,7 +1,3 @@
-<style lang="scss" scoped>
-@use "@/components/Skills/skills" as *;
-</style>
-
 <template>
   <section class="main-section portfolio__skills">
     <div class="bottom-shadow">
@@ -55,3 +51,7 @@ const skills = reactive([
 //   countNumbersFromArray()
 // })
 </script>
+
+<style lang="scss" scoped>
+@use "@/styles/components/skills" as *;
+</style>

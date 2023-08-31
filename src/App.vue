@@ -32,6 +32,7 @@ import Works from './components/Works/Works.vue'
 <!--</template>-->
 
 <template>
+
   <main>
     <InfoLeftPanel></InfoLeftPanel>
 
@@ -41,6 +42,9 @@ import Works from './components/Works/Works.vue'
 
     <Works></Works>
   </main>
+
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+@use "@/styles/boot.scss" as *;
+</style>

@@ -1,7 +1,10 @@
 {
   "name": "Portfolio",
-  "description": "My new portfolio with Vue, Typescript, Vite",
-  "start_url": ".",
+  "description": "My new portfolio (2023) with Vue, Typescript, Vite",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "http://localhost:8080/",
   "icons": [
     {
       "src": "./icon-192.png",

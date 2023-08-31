@@ -1,7 +1,3 @@
-<style lang="scss" scoped>
-@use "@/components/Works/worksStyle" as *;
-</style>
-
 <template>
   <section class="main-section">
 
@@ -39,7 +35,7 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import { AllWorks, RealWorks } from '@/types/types'
+import { AllWorks, RealWorks } from './types'
 
 const emailWorks = reactive<AllWorks[]>([
   {jpgNumber: 12, name: 'broochy'}
@@ -78,3 +74,7 @@ function buildHrefForWorkPreviewImages (itemName: string) {
   return `works/${itemName}/index.html`
 }
 </script>
+
+<style lang="scss" scoped>
+@use "@/styles/components/works" as *;
+</style>

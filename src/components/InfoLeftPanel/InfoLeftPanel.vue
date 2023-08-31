@@ -1,7 +1,3 @@
-<style lang="scss" scoped>
-@use '@/components/InfoLeftPanel/infoLeftPanelStyle' as *;
-</style>
-
 <template>
   <header class="sidebar">
 
@@ -63,7 +59,7 @@
 
       <div class="grey-line"></div>
 
-      <template v-for="(item, index) in languagesList" :key="index">
+      <template v-for="(item, index) in listOfLanguages" :key="index">
         <p>{{ item.language }} - {{ item.level }}</p>
       </template>
 
@@ -73,12 +69,16 @@
 
 <script setup lang="ts">
 import { reactive } from 'vue'
-import { LanguagesList } from '@/types/types'
+import { LanguagesList } from './types'
 
-const languagesList = reactive<LanguagesList[]> ([
+const listOfLanguages = reactive<LanguagesList[]> ([
   {language: 'English', level: 'Intermediate'},
   {language: 'Ukrainian', level: 'Native'},
   {language: 'Russian', level: 'Native'},
   {language: 'Polish', level: 'Basic'}
 ]);
 </script>
+
+<style lang="scss" scoped>
+@use "@/styles/components/infoLeftPanel" as *;
+</style>

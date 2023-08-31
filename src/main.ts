@@ -1,4 +1,4 @@
-import './assets/reset.css'
+import './assets/main.css'
 import messages from '@intlify/vite-plugin-vue-i18n/messages';
 
 import { createApp } from 'vue';

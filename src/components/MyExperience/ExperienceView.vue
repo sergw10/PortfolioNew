@@ -1,9 +1,6 @@
-<style lang="scss" scoped>
-@use "@/components/MyExperience/experienceStyle" as *;
-</style>
-
 <template>
   <section class="main-section">
+
     <div class="bottom-shadow">
       <h2>Experience</h2>
     </div>
@@ -83,3 +80,6 @@
 <script setup lang="ts">
 </script>
 
+<style lang="scss" scoped>
+  @use "@/styles/components/experienceView" as *;
+</style>
